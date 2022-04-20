@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0949E12280FAA2300460EF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0949E11280FAA2300460EF1 /* ContentView.swift */; };
 		A0C24204278BF727002F9152 /* FindCoronaCenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C24203278BF727002F9152 /* FindCoronaCenterApp.swift */; };
 		A0C24208278BF728002F9152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C24207278BF728002F9152 /* Assets.xcassets */; };
 		A0C2420B278BF728002F9152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C2420A278BF728002F9152 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0949E11280FAA2300460EF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0C24200278BF727002F9152 /* FindCoronaCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCoronaCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C24203278BF727002F9152 /* FindCoronaCenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoronaCenterApp.swift; sourceTree = "<group>"; };
 		A0C24207278BF728002F9152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0949E0F280FA9F200460EF1 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				A0C24218278C0704002F9152 /* RegionView.swift */,
+				A0C2421A278C070D002F9152 /* RegionViewModel.swift */,
+				A0C2421E278C09D3002F9152 /* RegionItem.swift */,
+				A0949E10280FA9FD00460EF1 /* Center */,
+			);
+			path = Region;
+			sourceTree = "<group>";
+		};
+		A0949E10280FA9FD00460EF1 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				A0C24223278C101F002F9152 /* CenterList.swift */,
+				A0C24221278C0EC9002F9152 /* CenterRow.swift */,
+				A0C24229278C177A002F9152 /* CenterDetailView.swift */,
+				A0C24225278C1309002F9152 /* MapView.swift */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
 		A0C241F7278BF727002F9152 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +123,8 @@
 		A0C24220278C0BE4002F9152 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				A0C24218278C0704002F9152 /* RegionView.swift */,
-				A0C2421A278C070D002F9152 /* RegionViewModel.swift */,
-				A0C2421E278C09D3002F9152 /* RegionItem.swift */,
-				A0C24221278C0EC9002F9152 /* CenterRow.swift */,
-				A0C24223278C101F002F9152 /* CenterList.swift */,
-				A0C24225278C1309002F9152 /* MapView.swift */,
-				A0C24229278C177A002F9152 /* CenterDetailView.swift */,
+				A0949E11280FAA2300460EF1 /* ContentView.swift */,
+				A0949E0F280FA9F200460EF1 /* Region */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -182,6 +201,7 @@
 			files = (
 				A0C24224278C101F002F9152 /* CenterList.swift in Sources */,
 				A0C24222278C0EC9002F9152 /* CenterRow.swift in Sources */,
+				A0949E12280FAA2300460EF1 /* ContentView.swift in Sources */,
 				A0C2421B278C070D002F9152 /* RegionViewModel.swift in Sources */,
 				A0C24226278C1309002F9152 /* MapView.swift in Sources */,
 				A0C2422A278C177A002F9152 /* CenterDetailView.swift in Sources */,

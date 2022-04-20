@@ -19,23 +19,20 @@ struct MapView: View {
     @State private var annotationItems = [AnnotationItem]()
     
     var body: some View {
-        Map(
-            coordinateRegion: $region,
+        Map(coordinateRegion: $region,
             annotationItems: [AnnotationItem(coordinate: coordination)],
             annotationContent: {
-                MapMarker(coordinate: $0.coordinate, tint: .mint)
-            }
-        )
-            .onAppear {
-                setRegion(coordination)
-                setAnnotationItems(coordination)
-            }
+            MapMarker(coordinate: $0.coordinate, tint: .mint)
+        })
+        .onAppear {
+            setRegion(coordination)
+            setAnnotationItems(coordination)
+        }
     }
     
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
-        region = MKCoordinateRegion(
-            center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01) //1에 가까울수록 넓은 범위
-        )
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        region = MKCoordinateRegion(center: coordinate, span: span) //1에 가까울수록 넓은 범위
     }
     
     private func setAnnotationItems(_ coordinate: CLLocationCoordinate2D) {

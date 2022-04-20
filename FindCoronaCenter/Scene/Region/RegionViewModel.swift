@@ -12,7 +12,7 @@ class RegionViewModel: ObservableObject {
     @Published var centers = [Center.Sido: [Center]]()
     private var cancellables = Set<AnyCancellable>() //disposeBag
     
-    init(centerNetwork: CenterNetwork = CenterNetwork() ) {
+    init(centerNetwork: CenterNetwork = CenterNetwork()) {
         centerNetwork.getCenterList()
             .receive(on: DispatchQueue.main)
             .sink(

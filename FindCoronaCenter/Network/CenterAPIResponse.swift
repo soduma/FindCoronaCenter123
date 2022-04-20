@@ -54,7 +54,6 @@ struct Center: Hashable, Codable {
     var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(
             latitude: CLLocationDegrees(lat) ?? .zero,
-            longitude: CLLocationDegrees(lng) ?? .zero
-        )
+            longitude: CLLocationDegrees(lng) ?? .zero)
     }
 }

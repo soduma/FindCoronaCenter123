@@ -18,7 +18,7 @@ struct RegionView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: items, spacing: 20) {
-                    ForEach(Center.Sido.allCases, id: \.id) { sido in  //CaseIterable로 allCases 사용가능
+                    ForEach(Center.Sido.allCases, id: \.id) { sido in //CaseIterable로 allCases 사용가능
                         let centers = viewModel.centers[sido] ?? []
                         NavigationLink(destination: CenterList(centers: centers)) {
                             RegionItem(region: sido, count: centers.count)
