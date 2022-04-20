@@ -68,10 +68,18 @@
 			children = (
 				A0C24223278C101F002F9152 /* CenterList.swift */,
 				A0C24221278C0EC9002F9152 /* CenterRow.swift */,
+				A0949E1F28101F8F00460EF1 /* Detail */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		A0949E1F28101F8F00460EF1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
 				A0C24229278C177A002F9152 /* CenterDetailView.swift */,
 				A0C24225278C1309002F9152 /* MapView.swift */,
 			);
-			path = Center;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		A0C241F7278BF727002F9152 = {
